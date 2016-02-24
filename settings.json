@@ -1,3 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
+    //-------- Editor configuration --------
+
+    "editor.tabSize": 2,
+
+    //-------- Files configuration --------
+
+    "files.trimTrailingWhitespace": true
 }

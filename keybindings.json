@@ -1,15 +1,14 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    
+
 // Removed default bindings
 { "key": "ctrl+g",                "command": "cancelSelection" },
 { "key": "alt+cmd+f",             "command": "cancelSelection" },
 { "key": "cmd+\\",                "command": "cancelSelection" },
-{ "key": "cmd+w",                 "command": "cancelSelection" },
-    
+
 // Cancel actions
-{ "key": "ctrl+g",                "command": "closePeekDeclarationEditor",
-                                     "when": "editorFocus && inInnerEditor" },
+{ "key": "ctrl+g",                "command": "closeReferenceSearchEditor",
+                                     "when": "editorFocus && inReferenceSearchEditor" },
 { "key": "ctrl+g",                "command": "closeReferenceSearchEditor",
                                      "when": "editorFocus && inInnerEditor" },
 { "key": "ctrl+g",                "command": "cancelSelection",
@@ -18,14 +17,12 @@
                                      "when": "editorTextFocus && editorHasMultipleSelections" },
 { "key": "ctrl+g",                "command": "closeFindWidget",
                                      "when": "editorFocus && findWidgetVisible" },
-{ "key": "ctrl+g",                "command": "leaveChangeAllMode",
-                                     "when": "editorTextFocus && inChangeAllMode" },
+{ "key": "ctrl+g",                "command": "closeBreakpointWidget",
+                                     "when": "editorFocus && breakpointWidgetVisible" },
 { "key": "ctrl+g",                "command": "leaveSnippet",
                                      "when": "editorTextFocus && inSnippetMode" },
 { "key": "ctrl+g",                "command": "closeMarkersNavigation",
                                      "when": "editorFocus && markersNavigationVisible" },
-{ "key": "ctrl+g",                "command": "closePeekDeclaration",
-                                     "when": "editorFocus && peekDeclarationVisible" },
 { "key": "ctrl+g",                "command": "closeReferenceSearch",
                                      "when": "editorFocus && referenceSearchVisible" },
 { "key": "ctrl+g",                "command": "closeParameterHints",
@@ -36,8 +33,16 @@
                                      "when": "editorTextFocus && suggestWidgetVisible" },
 { "key": "ctrl+g",                "command": "cancelRenameInput",
                                      "when": "editorFocus && renameInputVisible" },
+{ "key": "ctrl+g",                "command": "closeAccessibilityHelp",
+                                     "when": "editorFocus && accessibilityHelpWidgetVisible" },
 { "key": "ctrl+g",                "command": "workbench.action.closeMessages",
                                      "when": "globalMessageVisible" },
+{ "key": "ctrl+g",                "command": "closePeekDeclarationEditor",
+                                     "when": "editorFocus && inInnerEditor" },
+{ "key": "ctrl+g",                "command": "leaveChangeAllMode",
+                                     "when": "editorTextFocus && inChangeAllMode" },
+{ "key": "ctrl+g",                "command": "closePeekDeclaration",
+                                     "when": "editorFocus && peekDeclarationVisible" },
 
 // VS Code Functions
 { "key": "cmd+0",                "command": "workbench.action.toggleSidebarVisibility" },
@@ -75,7 +80,6 @@
 // Region
 { "key": "ctrl+x h",              "command": "editor.action.selectAll",
                                      "when": "editorTextFocus" },
-{ "key": "cmd+w",                    "when": "editorTextFocus" },
 { "key": "ctrl+-",                "command": "expand_region" },
 
 // Widget
@@ -126,6 +130,7 @@
 
 // Window Management
 { "key": "ctrl+x 0",              "command": "workbench.action.closeActiveEditor" },
+{ "key": "cmd+w",                 "command": "workbench.action.closeActiveEditor" },
 { "key": "ctrl+x 3",              "command": "workbench.action.splitEditor" },
 { "key": "ctrl+x o",              "command": "workbench.action.cycleEditor" },
 
