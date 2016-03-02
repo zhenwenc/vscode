@@ -67,6 +67,9 @@
                                      "when": "editorTextFocus" },
 { "key": "cmd+ctrl+_",            "command": "redo",
                                      "when": "editorTextFocus" },
+{ "key": "shift+ctrl+c shift+ctrl+c",
+                                  "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+                                     "when": "editorTextFocus" },
 
 // Cursor Movement
 { "key": "cmd+f",                 "command": "cursorWordRight",
@@ -127,9 +130,12 @@
 { "key": "ctrl+shift+s",          "command": "workbench.view.search" },
 { "key": "cmd+m b",               "command": "workbench.action.quickOpen" },
 { "key": "ctrl+x b",              "command": "workbench.action.quickOpen" },
+{ "key": "cmd+alt+left",          "command": "workbench.files.action.openPreviousWorkingFile" },
+{ "key": "cmd+alt+right",         "command": "workbench.files.action.openNextWorkingFile" },
 
 // Window Management
 { "key": "ctrl+x 0",              "command": "workbench.action.closeActiveEditor" },
+{ "key": "ctrl+x 1",              "command": "workbench.action.closeOtherEditors" },
 { "key": "cmd+w",                 "command": "workbench.action.closeActiveEditor" },
 { "key": "ctrl+x 3",              "command": "workbench.action.splitEditor" },
 { "key": "ctrl+x o",              "command": "workbench.action.cycleEditor" },

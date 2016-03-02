@@ -3,8 +3,15 @@
     //-------- Editor configuration --------
 
     "editor.tabSize": 2,
+    "editor.cursorBlinking": "visible",
+    "editor.renderWhitespace": true,
 
     //-------- Files configuration --------
 
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+
+    //-------- TypeScript configuration --------
+
+    "typescript.useCodeSnippetsOnMethodSuggest": true,
+    "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib/"
 }
