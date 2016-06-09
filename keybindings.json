@@ -132,6 +132,13 @@
 { "key": "ctrl+x b",              "command": "workbench.action.quickOpen" },
 { "key": "cmd+alt+left",          "command": "workbench.files.action.openPreviousWorkingFile" },
 { "key": "cmd+alt+right",         "command": "workbench.files.action.openNextWorkingFile" },
+{ "key": "cmd+,",                 "command": "workbench.action.navigateBack" },
+{ "key": "cmd+.",                 "command": "editor.action.goToDeclaration",
+                                     "when": "editorTextFocus" },
+{ "key": "alt+.",                 "command": "editor.action.previewDeclaration",
+                                     "when": "editorTextFocus" },
+{ "key": "alt+shift+.",           "command": "editor.action.referenceSearch.trigger",
+                                     "when": "editorTextFocus" },
 
 // Window Management
 { "key": "ctrl+x 0",              "command": "workbench.action.closeActiveEditor" },
